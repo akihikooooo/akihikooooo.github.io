@@ -1,0 +1,36 @@
+:root{
+    --celestial-blue: #1694e1ff;
+    --engineering-orange: #c80808ff;
+    --pakistan-green: #004b06ff;
+    --mountbatten-pink: #8c718cff;
+    --brunswick-green: #084231ff;
+    --mahogany: #c14b03ff;
+    --brown: #975326ff;
+    --auburn: #ab2836ff;
+    --fire-brick: #b43130ff;
+    --rust: #b84d23ff;
+}
+
+body {
+    margin:0px;
+    padding:0px;
+}
+ul {
+    list-style:none;
+}
+nav {
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+    padding:0px 10px 0px 10px;
+    height:64px;
+    background-color: var(--brunswick-green);
+    color:beige;
+}
+nav ul li{
+    display:inline;
+    margin:10px;
+}
+nav ul li a{
+    text-decoration: none;
+}
