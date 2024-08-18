@@ -10,7 +10,21 @@
     --fire-brick: #b43130ff;
     --rust: #b84d23ff;
 }
-
+@font-face {
+    font-family: Montserrat;
+    src: url(./font/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: Lora;
+    src: url(./font/Lora-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: Hind Siliguri;
+    src: url(./font/HindSiliguri-Regular.ttf);
+}
+* {
+    font-family: "Montserrat";
+}
 body {
     margin:0px;
     padding:0px;
@@ -19,11 +33,12 @@ ul {
     list-style:none;
 }
 nav {
+    font-size: 1.5rem;
     display:flex;
     align-items: center;
     justify-content:space-between;
-    padding:0px 10px 0px 10px;
-    height:64px;
+    padding:0px 20px;
+    height:100px;
     background-color: var(--brunswick-green);
     color:beige;
 }
@@ -33,4 +48,29 @@ nav ul li{
 }
 nav ul li a{
     text-decoration: none;
+    padding:35px 50px;
 }
+nav ul li a:hover{
+    background-color: #fefefe;
+}
+#section1 {
+    font-size: 2rem;
+    text-align: center;
+    border:solid 1px red;
+    line-height: 1px;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    background-color: #5f5f5f;
+    color:#fefefe;
+    height:30rem;
+}
+input[type="text"]{
+    border-radius:100px;
+    padding:0px 10px;
+}
+@media only screen and (max-width: 600px) {
+    nav ul li a{
+        display:none;
+    }
+  }
