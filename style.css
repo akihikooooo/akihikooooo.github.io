@@ -54,7 +54,7 @@ nav ul li a:hover{
     background-color: #fefefe;
 }
 #section1 {
-    font-size: 2rem;
+    font-size: 5vw;
     text-align: center;
     border:solid 1px red;
     line-height: 1px;
@@ -69,8 +69,9 @@ input[type="text"]{
     border-radius:100px;
     padding:0px 10px;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 792px) {
     nav ul li a{
         display:none;
     }
+
   }
