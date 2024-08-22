@@ -5,29 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MathDomain: Learn Math, the Easy way!</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./navbar.css">
+    <link type="x-icon" rel="icon" href="./img/logo/MathDomain-01.png">
 </head>
 <body>
-    <nav>
-        <div id="Logo">
-            <h1>Logo</h1>
-        </div>
-        <ul id="links">
-            <li><a href="#Home">Home</a></li>
-            <li><a href="#Lessons">Lessons</a></li>
-            <li><a href="#About">About</a></li>
-        </ul>
-    </nav>
-    <div id="section1">
-        <div>
-            <h1>MathDomain</h1>
-            <p style="font-family: Lora;">Learn Math, the Easy Way.</p>
-            <input type="text"
-            style="height:40px; width:50vw" 
-            id="searchbar"
-            placeholder="Search for Math Lessons"
-            style="font-family:Hind Siliguri;">
-        </div>
+    <header>
+        <nav>
+            <div id="Logo" style="display: flex; align-items:center;">
+                <img src="./img/logo/MathDomain-01.svg" height="60px" id="MDLogo" alt="MathDomain logo" style="transition:0.3s ease;">
+                <h1 id="logotext">MathDomain</h1>
+            </div>
+            <input type="searchbar" 
+            id="navsearch"
+            placeholder="Search MathDomain"/>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul id="links">
+                <li><a href="#Home" class="nav-links">Home</a></li>
+                <li><a href="#Lessons" class="nav-links">Lessons</a></li>
+                <li><a href="#About" class="nav-links">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="section1">
+            <div>
+                <h1>MathDomain</h1>
+                <p>Learn Math, the Easy Way.</p>
+                <input type="text"
+                style="height:40px; width:50vw" 
+                id="searchbar"
+                placeholder="Search for Math Lessons"
+                style="font-family:Hind Siliguri;">
+            </div>
+        </section>
+    </main>
     </div>
-    
 </body>
 </html>
