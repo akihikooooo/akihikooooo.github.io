@@ -8,8 +8,8 @@ nav {
     justify-content:space-between;
     padding:0px 20px;
     height:100px;
-    background-color: var(--brunswick-green);
-    color:beige;
+    background-color: #ffffff;
+    color:rgb(0, 0, 0);
     transition: height 0.3s ease;
 }
 nav ul li{
@@ -21,11 +21,11 @@ nav ul li a{
     padding:35px 50px;
     font-family: "Montserrat";
     transition: 0.3s ease;
-    color:#fefefe;
+    color:#000000;
 }
 nav ul li a:hover{
-    background-color: #fefefe;
-    color:#000000;
+    background-color: #000000;
+    color:#ffffff;
 }
 .hamburger{
     display:none;
@@ -34,13 +34,15 @@ nav ul li a:hover{
 .hamburger .bar{
     width: 25px;
     height: 3px;
-    background:#fefefe;
+    background:#000000;
     margin:5px;
 }
 #navsearch{
     padding:0px 10px;
     border-radius: 50px;
     height:40px;
+    border:solid 2px #474747;
+    transition: 0.3s ease;
 }
 @media only screen and (max-width: 1006px){
     #navsearch{
@@ -48,7 +50,7 @@ nav ul li a:hover{
     }
 }
 @media only screen and (max-width: 792px){
-    nav ul li a{
+    .nav-links{
         display:none;
     }
     nav{
@@ -56,8 +58,16 @@ nav ul li a:hover{
     }
     .hamburger{
         display:block;
+        position: absolute;
+        right: 0px;
+        padding: 0px 20px;
     }
-    .nav-links{
-        display:none;
+}
+@media only screen and (min-width: 792px){
+    #logotext{
+        display: none;
+    }
+    #MDLogo {
+        height:75px;
     }
 }

@@ -32,12 +32,11 @@ body {
 #section1 {
     font-size: 5vw;
     text-align: center;
-    border:solid 1px red;
     line-height: 1px;
     display:flex;
     align-items:center;
     justify-content: center;
-    background-color: #5f5f5f;
+    background-color: #313131;
     color:#fefefe;
     height:30rem;
     transition: height 0.3s ease;
