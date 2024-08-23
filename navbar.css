@@ -27,15 +27,17 @@ nav ul li a:hover{
     background-color: #000000;
     color:#ffffff;
 }
-.hamburger{
+.container{
     display:none;
     cursor:pointer;
+    transition:0.3s ease;
 }
-.hamburger .bar{
+.container .bar{
     width: 25px;
     height: 3px;
     background:#000000;
-    margin:5px;
+    margin:5px 0px;
+    transition: 0.4s ease;
 }
 #navsearch{
     padding:0px 10px;
@@ -43,6 +45,19 @@ nav ul li a:hover{
     height:40px;
     border:solid 2px #474747;
     transition: 0.3s ease;
+}
+.change {
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+}
+.change #bar1{
+    transform: translate(0, 11px) rotate(-45deg);
+}
+.change #bar2{
+    opacity: 0;
+}
+.change #bar3{
+    transform: translate(0, -5px) rotate(45deg);
 }
 @media only screen and (max-width: 1006px){
     #navsearch{
@@ -56,7 +71,7 @@ nav ul li a:hover{
     nav{
         height: 75px;
     }
-    .hamburger{
+    .container{
         display:block;
         position: absolute;
         right: 0px;

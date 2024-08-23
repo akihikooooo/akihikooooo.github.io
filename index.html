@@ -18,10 +18,10 @@
             <input type="searchbar" 
             id="navsearch"
             placeholder="Search MathDomain"/>
-            <div class="hamburger">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
+            <div class="container" onclick="hamburgerToggle(this)">
+                <div class="bar" id="bar1"></div>
+                <div class="bar" id="bar2"></div>
+                <div class="bar" id="bar3"></div>
             </div>
             <ul id="links">
                 <li><a href="#Home" class="nav-links">Home</a></li>
@@ -44,5 +44,10 @@
         </section>
     </main>
     </div>
+    <script>
+        function hamburgerToggle(x){
+            x.classList.toggle("change")
+        }
+    </script>
 </body>
 </html>
