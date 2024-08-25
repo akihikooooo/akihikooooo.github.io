@@ -36,7 +36,7 @@ body {
     display:flex;
     align-items:center;
     justify-content: center;
-    background-color: #313131;
+    background-color: #040e7e;
     color:#fefefe;
     height:30rem;
     transition: height 0.3s ease;
