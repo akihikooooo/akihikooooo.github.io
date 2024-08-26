@@ -7,7 +7,7 @@ nav {
     align-items: center;
     justify-content:space-between;
     padding:0px 20px;
-    height:100px;
+    height:56px;
     background-color: #ffffff;
     color:rgb(0, 0, 0);
     transition: height 0.3s ease;
@@ -26,6 +26,10 @@ nav ul li a{
 nav ul li a:hover{
     background-color: #000000;
     color:#ffffff;
+}
+.searchbutton{
+    display:none;
+    cursor:pointer;
 }
 .container{
     display:none;
@@ -46,6 +50,17 @@ nav ul li a:hover{
     border:solid 2px #040e7e;
     transition: 0.3s ease;
 }
+<<<<<<< Updated upstream
+=======
+#mobile-buttons{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right:0px;
+}
+/* Hamburger Toggle */
+>>>>>>> Stashed changes
 .change {
     transform: translateY(-5px);
     transition: 0.3s ease;
@@ -73,16 +88,15 @@ nav ul li a:hover{
     }
     .container{
         display:block;
-        position: absolute;
         right: 0px;
         padding: 0px 20px;
+    }
+    .searchbutton{
+        display:block;
     }
 }
 @media only screen and (min-width: 792px){
     #logotext{
         display: none;
-    }
-    #MDLogo {
-        height:75px;
     }
 }

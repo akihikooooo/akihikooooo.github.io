@@ -36,17 +36,47 @@ body {
     display:flex;
     align-items:center;
     justify-content: center;
+<<<<<<< Updated upstream
     background-color: #040e7e;
+=======
+    background-color: #3a571f;
+>>>>>>> Stashed changes
     color:#fefefe;
-    height:30rem;
+    height:30.8rem;
     transition: height 0.3s ease;
 }
+<<<<<<< Updated upstream
 #section1 div p {
     font-family: Lora;
 }
 input[type="text"]{
     border-radius:100px;
     padding:0px 10px;
+=======
+/* Wave transition */
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(127% + 1.3px);
+    height: 113px;
+}
+
+.wave .shape-fill {
+    fill: #FFFFFF;
+}
+#section2 {
+    height:10rem;
+>>>>>>> Stashed changes
 }
 @media only screen and (max-width: 792px) {
     #section1 {
