@@ -36,23 +36,11 @@ body {
     display:flex;
     align-items:center;
     justify-content: center;
-<<<<<<< Updated upstream
-    background-color: #040e7e;
-=======
     background-color: #3a571f;
->>>>>>> Stashed changes
     color:#fefefe;
     height:30.8rem;
     transition: height 0.3s ease;
 }
-<<<<<<< Updated upstream
-#section1 div p {
-    font-family: Lora;
-}
-input[type="text"]{
-    border-radius:100px;
-    padding:0px 10px;
-=======
 /* Wave transition */
 .wave {
     position: absolute;
@@ -76,7 +64,6 @@ input[type="text"]{
 }
 #section2 {
     height:10rem;
->>>>>>> Stashed changes
 }
 @media only screen and (max-width: 792px) {
     #section1 {
