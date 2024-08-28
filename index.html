@@ -19,14 +19,16 @@
                     style="transition:0.3s ease;">
                 <h1 id="logotext">MathDomain</h1>
             </div>
-            <input type="searchbar" 
+            <input type="search" 
             id="navsearch"
             placeholder="Search MathDomain"
-            style="border-radius:100px; padding:0px 10px;"/>
+            style="border-radius:100px; padding:0px 10px; width:25vw;"/>
             <div id="mobile-buttons">
+                <div class="searchIcon" onclick="searchToggle(this)">
                 <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24" class="searchbutton">
                     <path fill="currentColor" d="m19.6 21l-6.3-6.3q-.75.6-1.725.95T9.5 16q-2.725 0-4.612-1.888T3 9.5t1.888-4.612T9.5 3t4.613 1.888T16 9.5q0 1.1-.35 2.075T14.7 13.3l6.3 6.3zM9.5 14q1.875 0 3.188-1.312T14 9.5t-1.312-3.187T9.5 5T6.313 6.313T5 9.5t1.313 3.188T9.5 14"/>
                 </svg>
+                </div>
                 <div class="container" onclick="hamburgerToggle(this)"> 
                     <!-- onclick eventlistener for toggling the state -->
                     <div class="bar" id="bar1"></div>
@@ -47,27 +49,23 @@
                 <h1>MathDomain</h1>
                 <p>Learn Math, the Easy Way.</p>
                 <input type="text"
-                style="height:40px; width:50vw" 
-                id="searchbar"
-                placeholder="Search for Math Lessons"
-                style="font-family:Hind Siliguri;
-                border-radius:50%;">
+                    style="height:40px; width:50vw" 
+                    id="searchbar"
+                    placeholder="Search for Math Lessons"
+                    style="font-family:Hind Siliguri;
+                    border-radius:50%;">
             </div>
-            <div class="wave">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <div class="wave-container">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" class="wave">
                     <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
                 </svg>
             </div>
-        </section>
+        </section>        
         <section id="section2">
 
         </section>
     </main>
     </div>
-    <script>
-        function hamburgerToggle(x){
-            x.classList.toggle("change")
-        }
-    </script>
+    <script src="./index.js"></script>
 </body>
 </html>

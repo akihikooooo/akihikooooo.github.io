@@ -38,29 +38,31 @@ body {
     justify-content: center;
     background-color: #3a571f;
     color:#fefefe;
-    height:30.8rem;
+    height:35rem;
     transition: height 0.3s ease;
 }
 /* Wave transition */
 .wave {
     position: absolute;
-    bottom: 0;
+    bottom:0;
     left: 0;
     width: 100%;
     overflow: hidden;
     line-height: 0;
-    transform: rotate(180deg);
+    transform:rotate(180deg); 
+    transition:0.3s;
 }
 
 .wave svg {
     position: relative;
     display: block;
     width: calc(127% + 1.3px);
-    height: 113px;
+    height: 2px;
+    bottom:0px;
 }
 
 .wave .shape-fill {
-    fill: #FFFFFF;
+    fill: #646464;
 }
 #section2 {
     height:10rem;
@@ -68,5 +70,7 @@ body {
 @media only screen and (max-width: 792px) {
     #section1 {
         height:25rem;
+    }
+    .wave{
     }
   }
