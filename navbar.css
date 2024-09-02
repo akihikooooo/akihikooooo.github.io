@@ -12,6 +12,7 @@ nav {
     color:var(--light-text);
     transition: height 0.3s ease;
     box-shadow: 4px 4px 10px #00000033;
+    position:sticky;
 }
 nav ul li{
     display:inline;
@@ -72,7 +73,10 @@ nav ul li a:hover{
 .change #bar3{
     transform: translate(0, -5px) rotate(45deg);
 }
-@media only screen and (max-width: 1006px){
+.toggled {
+    
+}
+@media only screen and (max-width: 1026px){
     #navsearch{
         display:none;
     }

@@ -35,6 +35,8 @@ body {
     background: linear-gradient(var(--light-primary) 80%, var(--light-secondary) 100%);
     color:#fefefe;
     height:25rem;
+=======
+    height:35rem;
     transition: height 0.3s ease;
     overflow-x:hidden ;
     padding:50px;
@@ -57,6 +59,28 @@ body {
     left:0;
     transform: translateY(7rem);
     transition:0.3 ease;
+/* Wave transition */
+.wave {
+    position: absolute;
+    bottom:0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform:rotate(180deg); 
+    transition:0.3s;
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(127% + 1.3px);
+    height: 2px;
+    bottom:0px;
+}
+
+.wave .shape-fill {
+    fill: #646464;
 }
 #section2 {
     height:10rem;
@@ -67,5 +91,7 @@ body {
     }
     #wave1{
         transform:translateY(-1rem)
+    }
+    .wave{
     }
   }
