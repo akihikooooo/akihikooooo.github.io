@@ -7,10 +7,11 @@ nav {
     align-items: center;
     justify-content:space-between;
     padding:0px 20px;
-    height:56px;
-    background-color: #ffffff;
-    color:rgb(0, 0, 0);
+    height:54px;
+    background-color: var(--light-background);
+    color:var(--light-text);
     transition: height 0.3s ease;
+    box-shadow: 4px 4px 10px #00000033;
     position:sticky;
 }
 nav ul li{
@@ -19,14 +20,14 @@ nav ul li{
 }
 nav ul li a{
     text-decoration: none;
-    padding:35px 50px;
+    padding:0.8rem 50px;
     font-family: "Montserrat";
     transition: 0.3s ease;
     color:#000000;
 }
 nav ul li a:hover{
-    background-color: #000000;
-    color:#ffffff;
+    background-color: var(--light-text);
+    color:var(--light-background);
 }
 .searchbutton{
     display:none;
